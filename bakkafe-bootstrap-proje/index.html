@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bak Kafe</title>
+    <!-- 1. Önce Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <!-- 2. En son benim CSS'im -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Menü -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#anasayfa">Bak Kafe</a>
+
+            <!-- ☰ butonu: telefonda görünür, "anaMenu" kutusunu açıp kapatır -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#anaMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Saklanan kutu: linkler bunun içinde -->
+            <div class="collapse navbar-collapse" id="anaMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#anasayfa">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hakkimizda">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menü</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#iletisim">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Anasayfa -->
+    <section id="anasayfa">
+        <div class="container text-center py-5">
+            <h1>Konya'nın en tatlı köşesi</h1>
+            <a class="btn btn-warning" href="#menu">Menüye göz at</a>
+        </div>
+    </section>
+
+    <!-- Hakkımızda -->
+    <section id="hakkimizda">
+        <div class="container text-center py-5">
+            <h2>Hakkımızda</h2>
+            <p>Konya'da hayata geçirdiğimiz Bak Kafe, yalnızca bir kahve molası vereceğiniz yer değil; dostlukların
+                pekiştiği, güzel sohbetlerin edildiği ve her anın keyifle yaşandığı özel bir buluşma noktası olma
+                hayaliyle doğdu. Misafirlerimize sıcak, samimi ve huzurlu bir ortam sunarken, her ziyaretin güzel bir
+                anıya dönüşmesini hedefliyoruz.</p>
+            <p>Bizim için kafe kültürü sadece kahve ve lezzetten ibaret değil; güler yüz, kaliteli hizmet ve kendinizi
+                evinizde hissedeceğiniz bir atmosfer demek. Bak Kafe ailesi olarak, sizleri en güzel anlarınıza ortak
+                olmaya, sevdiklerinizle birlikte keyifli vakit geçirmeye davet ediyoruz. Çünkü bizce güzel anlar, güzel
+                mekânlarda birikir.</p>
+        </div>
+    </section>
+
+    <!-- Menü -->
+    <section id="menu">
+        <div class="container text-center py-5">
+            <h2>Menü</h2>
+            <div class="row g-4">
+
+                <!-- 1. kart: Tiramisu -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="img/tiramisu.jpeg" alt="Tiramisu" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Tiramisu</h5>
+                            <p class="card-text">İtalyan mutfağının efsane tatlısı: kahveye batırılmış kedidili ile
+                                mascarpone kremanın buluşması.</p>
+                            <p class="fw-bold">110 ₺</p>
+                            <button type="button" class="btn btn-success">Sipariş ver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. kart: Cedric Grolet -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="img/cedric-grolet.jpeg" alt="Cedric Grolet" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Cedric Grolet</h5>
+                            <p class="card-text">Gerçek meyve görünümünde, ünlü Fransız pastacının imza tatlısı.</p>
+                            <p class="fw-bold">130 ₺</p>
+                            <button type="button" class="btn btn-success">Sipariş ver</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. kart: Limonlu Cheesecake -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <img src="img/limonluchhescake.jpeg" alt="Limonlu Cheesecake" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Limonlu Cheesecake</h5>
+                            <p class="card-text">Hafif ekşi limon sosuyla, yumuşak ve ferahlatıcı bir cheesecake.</p>
+                            <p class="fw-bold">100 ₺</p>
+                            <button type="button" class="btn btn-success">Sipariş ver</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="iletisim">
+        <div class="container text-center py-5">
+            <h2>İletişim</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Adres:</strong> Konya Meram Yeni Yol</p>
+                    <p><strong>Telefon:</strong> <a href="tel:+903326761308">0332 676 13 08</a></p>
+                    <p><strong>Saatler:</strong> 08.00 – 00.00</p>
+                </div>
+                <div class="col-md-6">
+                    <form class="text-start">
+                        <div class="mb-3">
+                            <label class="form-label" for="ad">Adınız</label>
+                            <input class="form-control" type="text" id="ad" name="ad">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="email">E-posta</label>
+                            <input class="form-control" type="email" id="email" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="mesaj">Mesajınız</label>
+                            <textarea class="form-control" id="mesaj" name="mesaj" rows="4"></textarea>
+                        </div>
+                        <button class="btn btn-warning" type="submit">Gönder</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2026 Bak Kafe</p>
+</footer>
+
+    <!-- Bootstrap JS: body'nin en sonunda -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
